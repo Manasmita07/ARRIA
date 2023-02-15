@@ -76,7 +76,49 @@
           <option>Medium</option>
         </select>
         <input type="number" value="1" />
-        <button class="normal">Add to Cart</button>
+        <button class="normal" onclick="window.location.href='cart.html';">Add to Cart</button>
+        <h4>Product details</h4>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          ullam provident fuga dolorem illum fugit accusantium sequi quia porro
+          harum, modi facere itaque, facilis maiores ipsam laborum! In, debitis
+          minus.</span
+        >
+      </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+      <div class="singlee-pro-image">
+        <img src="img/ssky shirtt.jpg" width="100%" id="MainnImg" alt="" />
+
+        <div class="smalll-img-group">
+          <div class="smalll-img-col">
+            <img src="img/ssky shirtt.jpg" width="100%" class="smalll-img" alt="" />
+          </div>
+          <div class="smalll-img-col">
+            <img src="img/shq.jpg" width="100%" class="smalll-img" alt="" />
+          </div>
+          <div class="smalll-img-col">
+            <img src="img/shw.jpg" width="100%" class="smalll-img" alt="" />
+          </div>
+          <div class="smalll-img-col">
+            <img src="img/shr.jpg" width="100%" class="smalll-img" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="singlee-pro-details">
+        <h6>Home / T-shirts</h6>
+        <h4>Men's Fashion T-shirts</h4>
+        <h2>$139.00</h2>
+        <select>
+          <option>select size</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>small</option>
+          <option>Medium</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="normal" onclick="window.location.href='cart.html';">Add to Cart</button>
         <h4>Product details</h4>
         <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
           ullam provident fuga dolorem illum fugit accusantium sequi quia porro
@@ -90,8 +132,8 @@
         <h2>Featured Products</h2>
         <p>Summer Collection New Modern Design</p>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='sproduct.html';">
-                <img src="img/ssky shirtt.jpg" width="30%" alt="">
+            <div class="pro" onclick="window.location.href='cart.html';">
+                <img src="img/f5.jpg" width="30%" alt="">
                 <div class="des">
                     <span>adidas</span>
                     <h5>Cartoon Astronaut T-shirts</h5>
@@ -108,7 +150,7 @@
             </div>
 
             <div class="pro" onclick="window.location.href='sproduct.html';">
-                <img src="img/shq.jpg" width="30%" alt="">
+                <img src="img/f7.jpg" width="30%" alt="">
                 <div class="des">
                     <span>adidas</span>
                     <h5>Cartoon Astronaut T-shirts</h5>
@@ -124,8 +166,8 @@
                 <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i> </a>
             </div>
 
-            <div class="pro" onclick="window.location.href='sproduct.html';">
-                <img src="img/shw.jpg" width="30%" alt="">
+            <div class="pro" onclick="window.location.href='cart.html';">
+                <img src="img/f8.jpg" width="30%" alt="">
                 <div class="des">
                     <span>adidas</span>
                     <h5>Cartoon Astronaut T-shirts</h5>
@@ -141,8 +183,8 @@
                 <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i> </a>
             </div>
 
-            <div class="pro" onclick="window.location.href='sproduct.html';">
-                <img src="img/shr.jpg" width="30%" alt="">
+            <div class="pro" onclick="window.location.href='cart.html';">
+                <img src="img/f9.jpg" width="30%" alt="">
                 <div class="des">
                     <span>adidas</span>
                     <h5>Cartoon Astronaut T-shirts</h5>
@@ -253,8 +295,25 @@
         smallimg[3].onclick = function () {
             MainImg.src = smallimg[3].src;
         }
+
+        var MainnImg = document.getElementById('MainnImg');
+        var smalllimg = document.getElementsByClassName('smalll-img');
+
+        smalllimg[0].onclick = function () {
+            MainnImg.src = smalllimg[0].src;
+        }
+        smalllimg[1].onclick = function () {
+            MainImg.src = smalllimg[1].src;
+        }
+        smalllimg[2].onclick = function () {
+            MainnImg.src = smalllimg[2].src;
+        }
+        smalllimg[3].onclick = function () {
+            MainnImg.src = smalllimg[3].src;
+        }
     </script>
 
     <script src="script.js"></script>
+    <script src="index2.js"></script>
   </body>
 </html>

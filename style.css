@@ -567,6 +567,10 @@ footer .copyright{
     cursor: pointer;
 }
 
+.smalll-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
 /* Single product */
 #prodetails{
     display: flex;
@@ -620,6 +624,59 @@ footer .copyright{
     line-height: 20px;
 }
 
+/* Men */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .singlee-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.smalll-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+#prodetails .singlee-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .singlee-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .singlee-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .singlee-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .singlee-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .singlee-pro-details input:focus{
+    outline: none;
+}
+#prodetails .singlee-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#prodetails .singlee-pro-details span{
+    line-height: 20px;
+}
 /* Blog Page  */
 
 #page-header.blog-header{
@@ -829,113 +886,17 @@ footer .copyright{
 }
 
 /* Cart page */
-
-#cart{
-    overflow-x: auto ;
-}
-
-#cart table{
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
-}
-#cart table img{
-    width: 70px;
-}
-#cart table td:nth-child(1){
-    width: 100px;
-    text-align: center;
-}
-#cart table td:nth-child(2){
-    width: 150px;
-    text-align: center;
-}
-#cart table td:nth-child(3){
-    width: 250px;
-    text-align: center;
-}
-#cart table td:nth-child(4),
-#cart table td:nth-child(5),
-#cart table td:nth-child(6){
-    width: 150px;
-    text-align: center;
-}
-#cart table td:nth-child(5) input{
-    width: 70px;
-    padding: 10px 5px 10px 15px;
-}
-
-#cart table thead{
-    border: 1px solid #e2e9e1;
-    border-left: none;
-    border-right: none;
-}
-
-#cart table thead td{
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 13px;
-    padding: 18px 0;
-}
-#cart table tbody tr td{
-    padding-top: 15px;
-}
-
-#cart table tbody tr td{
-    font-size: 13px;
-}
-
-#cart-add {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#coupon{
-    width: 50%;
-    margin-bottom: 30px;
-}
-
-#coupon h3,
-#subtotal h3{
-    padding-bottom: 15px;
-}
-#coupon input{
-    padding: 10px 20px;
-    outline: none;
-    width: 60%;
-    margin-right: 10px;
-    border: 1px solid #e2e9e1;
-}
-#coupon button,
-#subtotal button{
-    background-color:#088178;
-    color: #fff;
-    padding: 12px 20px;
-}
-
-#subtotal{
-    width: 50%;
-    margin-bottom: 30px;
-    border: 1px solid #e2e9e1;
-    padding: 30px;
-}
-
-#subtotal table{
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#subtotal table td{
-    width: 50%;
-    border: 1px solid #e2e9e1;
-    padding: 10px;
-    font-size: 13px;
+#page-header h2{
+    font-family: 'League Spartan', sans-serif;
 }
 /* Media Query */
 
 @media (max-width:799px){
+
+    *{
+        font-size: 20px;
+    }
+
     .section-p1{
         padding: 40px 40px;
     }
@@ -1032,7 +993,37 @@ footer .copyright{
     }
 }
 
+/* Contact US */
+
+
+.section-header{
+    width: 20%;
+    margin-left: 35%;
+}
+
+.shop-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page-header h2{
+    font-family: 'League Spartan', sans-serif;
+}
+#page-header p{
+    font-size: 30px;
+    font-family: 'League Spartan', sans-serif;
+}
+.section-header:hover{
+    text-shadow: 2px 2px #9fff03
+}
+
+
 @media(max-width: 477px){
+
+    *{
+        font-size: 10px;
+    }
+
     .section-p1{
         padding: 20px;
     }
@@ -1167,15 +1158,34 @@ footer .copyright{
     }
 
     /* Cart page */
-    #cart-add{
+    #container content-section{
         flex-direction: column;
     }
-    #coupon{
-        width: 100%;
+
+    .section-header{
+        width: 60%;
+        margin-left: 20%;
     }
-    
-    #subtotal{
+    .shop-item{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #ca .container content-section{
+        /* flex-direction: column; */
         width: 100%;
-        padding: 20px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #page-header h2{
+        font-family: 'League Spartan', sans-serif;
+    }
+    #page-header p{
+        font-size: 15px;
+        font-family: 'League Spartan', sans-serif;
+    }
+    .section-header:hover{
+        text-shadow: 2px 2px #9fff03
     }
 }
